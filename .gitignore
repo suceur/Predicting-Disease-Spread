@@ -1,0 +1,13 @@
+# Kedro
+conf/
+!conf/base/catalog.yml
+!conf/base/parameters.yml
+data/
+!data/08_reporting/*
+notebooks/
+pipelines/*pipeline.py
+pipelines/*.__init__.py
+tests/
+# IDE and editor files
+.vscode/
+
