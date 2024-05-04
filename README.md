@@ -10,7 +10,6 @@ This project aims to predict dengue cases using historical data and weather info
 ## Project Structure
 - `conf/`: Configuration files
 - `data/`: Input and output data
-- `notebooks/`: Jupyter notebooks for exploration and experimentation
 - `reports/`: Generated reports and visualizations
 - `src/`: Source code for the Kedro pipeline
 
