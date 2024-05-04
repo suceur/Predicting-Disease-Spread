@@ -17,12 +17,15 @@ This project aims to predict dengue cases using historical data and weather info
 ## Setup
 1. Install dependencies: `pip install -r requirements.txt`
 2. Run the pipeline: `kedro run`
-3. Visualize the pipeline: `kedro viz`
+
 
 ## Methodology
 - Data processing: Merging datasets, handling missing values, encoding categorical variables
-- Feature engineering: Splitting data, removing outliers, scaling features
+- Feature engineering: Splitting data, caping outliers, scaling features
 - Modeling: Training a Gradient Boosting Regressor, hyperparameter tuning, cross-validation
 - Submission: Preparing the submission file
 
 For more details, refer to the source code and pipeline configuration.
+
+![Project Flow Diagram](data/08_reporting/code flow diagram.png)
+

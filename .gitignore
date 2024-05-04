@@ -11,7 +11,9 @@ conf/local/**
 conf/**/*credentials*
 
 # except their sub-folders
-
+data
+!data/08_reporting/*
+!data/**/
 !logs/**/
 
 # LLM models
