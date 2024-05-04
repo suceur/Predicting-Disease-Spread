@@ -19,8 +19,8 @@ def create_pipeline(**kwargs):
     feature_engineering_pipeline = Pipeline(
         [
             node(split_data, inputs=["processed_train_data", "params:test_size", "params:random_state"], outputs=["X_train", "X_val", "y_train", "y_val"]),
-            node(remove_outliers, inputs=["X_train", "y_train", "X_val", "y_val", "params:outlier_threshold"], outputs=["X_train_clean", "y_train_clean", "X_val_clean", "y_val_clean"]),
-            node(scale_features, inputs=["X_train_clean", "X_val_clean", "processed_test_features"], outputs=["X_train_scaled", "X_val_scaled", "X_test_scaled"]),
+            node(remove_outliers, inputs=["X_train", "y_train", "X_val", "y_val","processed_test_features", "params:outlier_threshold"], outputs=["X_train_clean", "y_train_clean", "X_val_clean", "y_val_clean", "X_test_clean"]),
+            node(scale_features, inputs=["X_train_clean", "X_val_clean", "X_test_clean"], outputs=["X_train_scaled", "X_val_scaled", "X_test_scaled"]),
         ]
     )
 

@@ -1,0 +1,12 @@
+# Define the datasets for the train features, train labels, and test features
+dengue_features_train:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/dengue_features_train.csv
+
+dengue_labels_train:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/dengue_labels_train.csv
+
+dengue_features_test:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/dengue_features_test.csv
