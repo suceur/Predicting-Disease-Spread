@@ -27,5 +27,7 @@ This project aims to predict dengue cases using historical data and weather info
 
 For more details, refer to the source code and pipeline configuration.
 
-![Project Flow Diagram](data/08_reporting/code flow diagram.png)
+## Project Flow Diagram
+
+![Project Flow Diagram](/data/08_reporting/code%20flow%20diagram.png)
 
